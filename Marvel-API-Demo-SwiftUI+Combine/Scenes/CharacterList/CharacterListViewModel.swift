@@ -14,6 +14,7 @@ final class CharacterListViewModel: ObservableObject {
     @Published private(set) var characterList: [CharacterModel] = []
     @Published private(set) var totalCharacters: Int = 0
     @Published private(set) var hasError: Bool = false
+    @Published var searchText: String = ""
     
     private var cancellables = Set<AnyCancellable>()
     private var currentOffset: Int = 0

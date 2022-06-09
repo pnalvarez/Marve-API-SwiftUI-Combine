@@ -11,18 +11,21 @@ struct CharacterListView: View {
     @ObservedObject var viewModel: CharacterListViewModel
     
     var body: some View {
-        List {
-            VStack {
-                ForEach(0..<viewModel.totalCharacters, id: \.self) { index in
-                    getView(fromIndex: index)
-                        .onAppear {
-                            viewModel.loadCharacter(index: index)
-                        }
+        NavigationView {
+            List {
+                VStack {
+                    ForEach(0..<viewModel.totalCharacters, id: \.self) { index in
+                        getView(fromIndex: index)
+                            .onAppear {
+                                viewModel.loadCharacter(index: index)
+                            }
+                    }
                 }
             }
-        }
-        .onAppear {
-            viewModel.loadInitialCharacters()
+            .searchable(text: $viewModel.searchText)
+            .onAppear {
+                viewModel.loadInitialCharacters()
+            }
         }
     }
     

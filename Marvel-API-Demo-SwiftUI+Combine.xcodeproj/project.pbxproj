@@ -23,6 +23,9 @@
 		3F04F73A285175B1009A7E33 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F739285175B1009A7E33 /* CharacterListViewModel.swift */; };
 		3F04F73D28517729009A7E33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F73C28517729009A7E33 /* Constants.swift */; };
 		3F04F73F28517A8C009A7E33 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F73E28517A8C009A7E33 /* CharacterListView.swift */; };
+		3F04F74128517DCC009A7E33 /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F74028517DCC009A7E33 /* CharacterListItemView.swift */; };
+		3F04F7432851922A009A7E33 /* CharacterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F7422851922A009A7E33 /* CharacterListViewModelTests.swift */; };
+		3F04F7452851925D009A7E33 /* CharacterListServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04F7442851925D009A7E33 /* CharacterListServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		3F04F739285175B1009A7E33 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		3F04F73C28517729009A7E33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F04F73E28517A8C009A7E33 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		3F04F74028517DCC009A7E33 /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
+		3F04F7422851922A009A7E33 /* CharacterListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTests.swift; sourceTree = "<group>"; };
+		3F04F7442851925D009A7E33 /* CharacterListServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				3F04F70E2851319B009A7E33 /* Marvel_API_Demo_SwiftUI_CombineTests.swift */,
+				3F04F7422851922A009A7E33 /* CharacterListViewModelTests.swift */,
+				3F04F7442851925D009A7E33 /* CharacterListServiceMock.swift */,
 			);
 			path = "Marvel-API-Demo-SwiftUI+CombineTests";
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 		3F04F728285131AD009A7E33 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3F04F74028517DCC009A7E33 /* CharacterListItemView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 				3F04F73D28517729009A7E33 /* Constants.swift in Sources */,
 				3F04F73228516B56009A7E33 /* HTTPMethod.swift in Sources */,
 				3F04F73028516B39009A7E33 /* APIEndpointExposable.swift in Sources */,
+				3F04F74128517DCC009A7E33 /* CharacterListItemView.swift in Sources */,
 				3F04F73428517172009A7E33 /* CharacterListService.swift in Sources */,
 				3F04F736285171B7009A7E33 /* CharacterListModels.swift in Sources */,
 			);
@@ -358,7 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F04F7432851922A009A7E33 /* CharacterListViewModelTests.swift in Sources */,
 				3F04F70F2851319B009A7E33 /* Marvel_API_Demo_SwiftUI_CombineTests.swift in Sources */,
+				3F04F7452851925D009A7E33 /* CharacterListServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
